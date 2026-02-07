@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Romallo</title>
+
+    <!-- css external -->
+
+    <link rel="stylesheet" href="styles.css">
+
+<head>
+<script src="https://cdn.tailwindcss.com"></script>
+<body>
+   
+    <!-- header content -->
+    <header>
+        <h1>Todo List - Steven Romallo</h1>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+    
+        <!-- form section -->
+        <form id="todo-form">
+             <!-- Todo input -->
+            <input class="border border-gray-300 p-2 rounded" type="text" id="todo-input" placeholder="Enter a new todo item">
+
+             <!-- Date input -->
+            <input type="date" id="todo-date"> 
+        </form>
+             <!-- add button  -->
+            <button id="add-todo" class="bg-green-500 text-white p-2 rounded hover:bg-green-600">Add Todo</button>
+            <form id="todo-form" class="flex flex-col gap-3"></form>
+        </section>
+    <!-- action section -->
+     <section id="todo-actions">
+        <!-- clear all todos -->
+
+        <button id="clear-todo" class="bg-red-500 bg-red-500 text-white p-2 rounded hover:bg-red-600">Delete All Todo</button>
+
+        <!-- filter todos -->
+        <button id="filter-todo" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Filter Todo</button>
+       
+        <!-- Display Todo -->
+        <table>
+
+     <table class="w-full border-collapse border border-gray-300 mt-4">
+  <thead class="bg-gray-200">
+    <tr>
+      <th class="border border-gray-300 p-2 text-left">Task</th>
+      <th class="border border-gray-300 p-2 text-left">Due Date</th>
+      <th class="border border-gray-300 p-2 text-left">Status</th>
+      <th class="border border-gray-300 p-2 text-left">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody id="todoList">
+    <tr>
+      <td colspan="4" class="border border-gray-300 p-3 text-center text-gray-500">
+        No task found
+      </td>
+    </tr>
+  </tbody>
+</table>
+    </section> 
+
+    </main>
+
+   <!-- footer content --> 
+    <footer>
+     Todo list app - Steven Romallo
+    </footer>
+
+    <!-- javascript external -->
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
